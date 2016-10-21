@@ -1,0 +1,242 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="simple-grid.min.css">
+    <link rel="stylesheet" href="animate.css">
+	<style>
+        /*தமிழ் உயிரெழுத்துக்கள்*/
+		.a1 { background: url('images/Group1.png') no-repeat 0 0;	       background-size: 1149px 75px; width: 49px; height: 74px; }		
+		.a2 { background: url('images/Group1.png') no-repeat -75px 0;      background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a3 { background: url('images/Group1.png') no-repeat -151px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a4 { background: url('images/Group1.png') no-repeat -227px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a5 { background: url('images/Group1.png') no-repeat -303px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a6 { background: url('images/Group1.png') no-repeat -379px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a7 { background: url('images/Group1.png') no-repeat -455px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a8 { background: url('images/Group1.png') no-repeat -531px 0;     background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a9 { background: url('images/Group1.png') no-repeat -608px 0;     background-size: 1149px 75px; width: 49px; height: 74px; }	
+		.a10 { background: url('images/Group1.png') no-repeat -684px 0;    background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a11 { background: url('images/Group1.png') no-repeat -760px 0;    background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a12 { background: url('images/Group1.png') no-repeat -851px 0;    background-size: 1149px 75px; width: 50px; height: 74px; }	
+		.a13 { background: url('images/Group1.png') no-repeat -1100px 0;   background-size: 1149px 75px; width: 49px; height: 74px; }
+
+        /* */        
+        .aa1  { background: url('images/Group2.png') no-repeat 0 0;          background-size: 1466px 75px; width: 50px; height: 74px; }       
+        .aa2  { background: url('images/Group2.png') no-repeat -76px 0;      background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa3  { background: url('images/Group2.png') no-repeat -153px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa4  { background: url('images/Group2.png') no-repeat -229px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa5  { background: url('images/Group2.png') no-repeat -306px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa6  { background: url('images/Group2.png') no-repeat -383px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa7  { background: url('images/Group2.png') no-repeat -460px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa8  { background: url('images/Group2.png') no-repeat -537px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa9  { background: url('images/Group2.png') no-repeat -614px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa10 { background: url('images/Group2.png') no-repeat -691px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }           
+        .aa11 { background: url('images/Group2.png') no-repeat -768px 0;     background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa12 { background: url('images/Group2.png') no-repeat -844px 0;    background-size: 1466px 75px; width: 50px; height: 74px; }   
+        .aa13 { background: url('images/Group2.png') no-repeat -921px 0;    background-size: 1466px 75px; width: 49px; height: 75px; }
+        .aa14 { background: url('images/Group2.png') no-repeat -998px 0;    background-size: 1466px 75px; width: 49px; height: 74px; }
+        .aa15 { background: url('images/Group2.png') no-repeat -1075px 0;   background-size: 1466px 75px; width: 49px; height: 74px; }
+        .aa16 { background: url('images/Group2.png') no-repeat -1152px 0;   background-size: 1466px 75px; width: 50px; height: 74px; }
+        .aa17 { background: url('images/Group2.png') no-repeat -1229px 0;   background-size: 1466px 75px; width: 49px; height: 74px; }
+        .aa18 { background: url('images/Group2.png') no-repeat -1306px 0;   background-size: 1466px 75px; width: 50px; height: 74px; }
+        .aa0  { background: url('images/Group2.png') no-repeat -1416px 0;   background-size: 1466px 75px; width: 49px; height: 74px; }
+
+
+        /* */        
+        .k1  { background: url('images/Group3.png') no-repeat 0 0;          background-size: 510px 75px; width: 51px; height: 75px; }       
+        .k2  { background: url('images/Group3.png') no-repeat -77px 0;      background-size: 510px 75px; width: 51px; height: 75px; }   
+        .k3  { background: url('images/Group3.png') no-repeat -155px 0;     background-size: 510px 75px; width: 51px; height: 75px; }   
+        .k4  { background: url('images/Group3.png') no-repeat -248px 0;     background-size: 510px 75px; width: 51px; height: 75px; }   
+        .k5  { background: url('images/Group3.png') no-repeat -345px 0;     background-size: 510px 75px; width: 51px; height: 75px; }   
+        .k6  { background: url('images/Group3.png') no-repeat -459px 0;     background-size: 510px 75px; width: 51px; height: 75px; } 
+	</style>
+</head>
+<body style="background-color: #f0ede6;">
+<div class="container">      
+
+        <div class="row">  
+            <div class="col-12" align="center">
+                <img src="images/header.png" width="901" height="363">
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col-12">
+                பார்வையற்ற மக்கள் தொகையில் 10% மட்டுமே பிரெயில் எழுத படிக்க முடியும். பார்வையற்ற குழந்தைகள் Lego தொட்டுணரக்கூடிய இயல்பை விரும்புகின்றனர்.
+                பாரதி பிரெய்லி குழந்தைகளளின் விரல் நுனியில் மொழி கற்கும் ஆற்றலை அளிக்கும் ஓர் எளிய விளையாடும் பொருளாகும்.                 
+            </div> 
+            <div class="col-12">
+                Only 10% of blind people can read and write Braille. Visually Challenged kids love the tactile nature of Lego. Bharathi Braille Bricks is to bring learning to children's fingertips.
+            </div>
+        </div>
+
+        <hr class="dashed" />
+        <!-- Block 1 -->
+        <div class="row">	  
+            <div class="col-12 font-heavy" align="center">தமிழ் உயிரெழுத்துக்கள் - 12 +  ஆய்த எழுத்து - 1</div>
+    	</div>
+        <div class="row" align="center">  
+            <img class="a1" id="a1"></img>
+            <img class="a2" id="a2"></img>
+            <img class="a3" id="a3"></img>
+            <img class="a4" id="a4"></img>
+            <img class="a5" id="a5"></img>
+            <img class="a6" id="a6"></img>
+            <img class="a7" id="a7"></img>
+            <img class="a8" id="a8"></img>
+            <img class="a9" id="a9"></img>
+            <img class="a10" id="a10"></img>
+            <img class="a11" id="a11"></img>&nbsp;&nbsp;
+            <img class="a12" id="a12"></img> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="a13" id="a13"></img> 
+        </div>
+        <div class="row" align="center"> 
+            <span class="uyir popup" data-id="a1">அ&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a2" >ஆ&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a3" >இ&nbsp;&nbsp;&nbsp;</span> 
+            <span class="uyir popup" data-id="a4" >ஈ&nbsp;&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a5" >உ&nbsp;</span>
+            <span class="uyir popup" data-id="a6" >ஊ&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a7" >எ&nbsp;&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a8" >ஏ&nbsp;&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a9" >ஐ&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a10" >ஒ&nbsp;&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a11" >ஓ&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a12">ஔ&nbsp;&nbsp;&nbsp;</span>
+            <span class="uyir popup" data-id="a13">ஃ</span>
+        </div>
+        <!-- Block 1 -->
+        <!-- Block 2 -->
+        <div class="row">     
+            <div class="col-12 font-heavy" align="center">மெய்யெழுத்துக்கள் - 18</div>
+        </div>
+        <div class="row" align="center">     
+            <img class="aa1" id="aa1"></img>&nbsp;&nbsp;
+            <img class="aa2" id="aa2"></img>&nbsp;&nbsp;
+            <img class="aa3" id="aa3"></img>&nbsp;&nbsp;
+            <img class="aa4" id="aa4"></img>&nbsp;&nbsp;
+            <img class="aa5" id="aa5"></img>&nbsp;&nbsp;
+            <img class="aa6" id="aa6"></img>&nbsp;&nbsp;
+            <img class="aa7" id="aa7"></img>&nbsp;&nbsp;
+            <img class="aa8" id="aa8"></img>&nbsp;&nbsp;
+            <img class="aa9" id="aa9"></img>&nbsp;&nbsp;
+            <img class="aa10" id="aa10"></img>&nbsp;&nbsp;
+            <img class="aa11" id="aa11"></img>&nbsp;&nbsp;
+            <img class="aa12" id="aa12"></img>&nbsp;&nbsp;
+            <img class="aa13" id="aa13"></img>&nbsp;&nbsp;
+            <img class="aa14" id="aa14"></img>&nbsp;&nbsp;
+            <img class="aa15" id="aa15"></img>&nbsp;&nbsp;
+            <img class="aa16" id="aa16"></img>&nbsp;&nbsp;
+            <img class="aa17" id="aa17"></img>&nbsp;&nbsp;
+            <img class="aa18" id="aa18"></img>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img class="aa0" id="aa0"></img >
+        </div>
+        <div class="row" align="center"> 
+            <span class="mei popup" data-id="aa1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;க&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa2">ங&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa3">ச&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa4">ஞ&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa5">ட&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa6">ண&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa7">த&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa8">ந&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa9">ப&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa10">ம&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa11">ய&nbsp;&nbsp;&nbsp;&nbsp;</span>            
+            <span class="mei popup" data-id="aa12">ர&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa13">ல&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa14">வ&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa15">ழ&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa16">ள&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa17">ற&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa18">ன&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="mei popup" data-id="aa0">புள்ளி</span>
+        </div>  
+        <!-- Block 2 -->
+        <!-- Block 3 -->
+        <div class="row">     
+            <div class="col-12 font-heavy" align="center"> கிரந்த எழுத்துக்கள் ( சமஸ்கிருத மொழி / வடமொழி  )</div>
+        </div>
+        <div class="row" align="center">   
+            <img class="k1" id="k1"></img>
+            <img class="k2" id="k2"></img>
+            <img class="k3" id="k3"></img>
+            <img class="k4" id="k4"></img>
+            <img class="k5" id="k5"></img>
+            <img class="k6" id="k6"></img>
+        </div>        
+        <div class="row" align="center">   
+            <span class="kranda popup" data-id="k1">ஜ</span>
+            <span class="kranda popup" data-id="k2">ஷ</span>
+            <span class="kranda popup" data-id="k3">ஸ</span>
+            <span class="kranda popup" data-id="k4">ஹ</span>
+            <span class="kranda popup" data-id="k5">க்ஷ</span>
+            <span class="kranda popup" data-id="k6">ஶ</span>            
+        </div>
+        <!-- Block 3 -->
+        <hr class="dashed" />
+
+        <div class="row">     
+            <div class="col-12 font-heavy">3D Model & Project Gallery</div>
+        </div>
+        <div class="row">  
+            <div class="col-8" align="center">
+                <img src="images/uyir.png" alt="உயிரெழுத்துக்கள்" width="721" height="274"><br>உயிரெழுத்துக்கள்
+            </div>
+            <div class="col-4" align="center">
+                <img src="images/aayudha.png" alt="ஆய்த எழுத்து" width="201" height="274"><br>ஆய்த எழுத்து
+            </div>
+        </div>        
+        <hr class="dashed" />
+        <div class="row">     
+            <div class="col-12 font-heavy">3D Model - STL File Download</div>
+            <div class="col-12">
+                Click on the below links to go to Github Page to view and download 3D Printing files in .STL Format : <br>
+                <a href="https://github.com/a-vj/bharathi-braille/blob/master/BharathiBraille-Tamil-uyir.stl" target="_blank"> உயிரெழுத்துக்கள்  ( 23.3 MB )</a><br>
+                <a href="https://github.com/a-vj/bharathi-braille/blob/master/BharathiBraille-Tamil-aayudha.stl" target="_blank"> ஆய்த எழுத்து  ( 857 KB )</a><br>
+                <a href="https://twitter.com/bharathibraille" target="_blank"> மெய்யெழுத்துக்கள் </a><br>
+                <a href="https://twitter.com/bharathibraille" target="_blank"> கிரந்த எழுத்துக்கள்  </a><br>
+            </div>
+        </div>
+
+        <hr class="dashed" />
+        <div class="row">
+          <div class="col-3">
+            <h3>Get involved</h3>
+            <p>Bharathi Braille Bricks - Project Site, Design Files, 3D files are hosted on <a href="https://github.com/a-vj/bharathi-braille" target="_blank" rel="external nofollow">GitHub</a> and open for everyone to contribute. Please give us some feedback and join the development!</p>
+          </div>
+          <div class="col-3">
+            <h3>Contribute</h3>
+            <p>You want to help us and participate in the development? Just drop us a mail @ bharathibraille@gmail.com</p>
+          </div>
+          <div class="col-3">
+            <h3>Found a issues in design or documention?</h3>
+            <p>Open a <a href="https://github.com/a-vj/bharathi-braille/issues" target="_blank" rel="external nofollow">new issue</a> on GitHub.</p>
+          </div>
+          <div class="col-3">
+            <h3>Connect with us</h3>
+                Tweet us at <a href="https://twitter.com/bharathibraille" target="_blank">@bharathibraille</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                Email us at <span class="connect">bharathibraille@gmail.com</span>            
+          </div>
+        </div>
+        <hr class="dashed" />
+        <p><b>Bharathi Braille Bricks</b></p>
+          <p>&copy; 2016 &nbsp;&nbsp;Code licensed under <a href="http://opensource.org/licenses/mit-license.html" target="_blank" rel="external nofollow">MIT License</a>, design, 3D drawings, STL files under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" rel="external nofollow">Creative Commons BY 3.0</a>.</p>
+
+</div><!-- Container -->
+
+
+    <script type="text/javascript">
+        $('.popup').mouseover(function() {
+            var divName = $(this).data("id");
+            $('#' + divName).addClass('animated bounce');
+        });
+
+        $('.popup').mouseout(function() {
+            var divName = $(this).data("id");
+            $('#' + divName).removeClass('animated bounce');
+        });
+    </script>
+</body>
+</html>
